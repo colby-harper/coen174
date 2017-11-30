@@ -23,7 +23,7 @@
 <title>Edit Book</title>
 <h1>Book Matching Recommendation System</h1>
 <h2>Edit Book Details</h2>
-<a href="teacheraccountpage.php"><button type="button" class="back-btn">Back</button></a>
+<a href="accountpage.php"><button type="button" class="back-btn">Back</button></a>
 
   <div class="form_center">
   <div class="form_mate">
@@ -44,8 +44,8 @@
       <br><label><b>Recommended</b><br>
       <select name = "recommended">
       <option value="<?php echo $row['recommended'];?>" selected="selected">current</option>
-      <option value = "0"> Yes </option>
-      <option value = "1"> No </option>
+      <option value = "yes"> Yes </option>
+      <option value = "No"> No </option>
       </select> <br />
       <br><b>Topic</b></br>
       <input type="text" placeholder="Topic" id = "topic" name="topic" required value="<?php echo $row['topic'];?>">
