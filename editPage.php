@@ -23,6 +23,7 @@
 <title>Edit Book</title>
 <h1>Book Matching Recommendation System</h1>
 <h2>Edit Book Details</h2>
+<a href="teacheraccountpage.php"><button type="button" class="back-btn">Back</button></a>
 
   <div class="form_center">
   <div class="form_mate">
