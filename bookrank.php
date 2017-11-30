@@ -26,6 +26,7 @@
 <body>
   <title>Rank Book</title>
   <h1>Book Matching Recommendation System</h1>
+  <a href="studentaccountpage.php"><button type="button" class="back-btn">Back</button></a>
 
   <div id="filter" class="block">
   <div class="title">Rank Preferences</div>
