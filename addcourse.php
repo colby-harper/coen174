@@ -17,6 +17,11 @@
   $course_id = $db->real_escape_string($_POST["course_id"]);
   $name = $db->real_escape_string($_POST["name"]);
 
+  if(gettype( mixed $course_id != "integer") {
+      echo '<script>alert("Error: Unable to create course. Make sure ID is an integer");</script>';
+      echo '<META HTTP-EQUIV="Refresh" Content="0; URL=teacheraccountpage.php">';
+  }
+
   $sql = "SELECT * FROM courses WHERE course_id ="."'".$course_id."';";
   $result = $db->query($sql);
   if($result->num_rows == 1) {
