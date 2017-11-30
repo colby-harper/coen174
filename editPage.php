@@ -43,7 +43,7 @@
       <input type="number" placeholder="Number of Pages" id = "pages" name="pages" required value="<?php echo $row['pages'];?>">
       <br><label><b>Recommended</b><br>
       <select name = "recommended">
-      <option value="<?php echo $row['recommended'];?>" selected="selected">current</option>
+      <option value="<?php echo $row['recommend'];?>" selected="selected">current</option>
       <option value = "yes"> Yes </option>
       <option value = "No"> No </option>
       </select> <br />
