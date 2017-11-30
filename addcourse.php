@@ -17,7 +17,7 @@
   $course_id = $db->real_escape_string($_POST["course_id"]);
   $name = $db->real_escape_string($_POST["name"]);
 
-  if(gettype( mixed $course_id != "integer") {
+  if(is_null($course_id)) {
       echo '<script>alert("Error: Unable to create course. Make sure ID is an integer");</script>';
       echo '<META HTTP-EQUIV="Refresh" Content="0; URL=teacheraccountpage.php">';
   }
