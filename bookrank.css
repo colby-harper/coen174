@@ -165,3 +165,18 @@ ul {
   margin: 0px;
   cursor: pointer;
 }
+
+.back-btn {
+    line-height: 22px;
+    width: 58px;
+    font-size: 8pt;
+    font-family: tahoma;
+    margin-top: 40px;
+    margin-right: 120px;
+    position:absolute;
+    top:0;
+    right:0;
+    border:none;
+    cursor:pointer;
+    border-radius: 5px;
+}
