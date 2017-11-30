@@ -17,6 +17,12 @@
   $course_id = $db->real_escape_string($_POST["course_id"]);
   $name = $db->real_escape_string($_POST["name"]);
 
+  if($course_id == 0) {
+      echo '<script>alert("Error: Unable to create course. Make sure ID is an integer");</script>';
+      echo '<META HTTP-EQUIV="Refresh" Content="0; URL=teacheraccountpage.php">';
+  }
+  else {
+
   $sql = "SELECT * FROM courses WHERE course_id ="."'".$course_id."';";
   $result = $db->query($sql);
   if($result->num_rows == 1) {
@@ -32,6 +38,7 @@
             echo '<script>alert("Error: Unable to create course");</script>';
             echo '<META HTTP-EQUIV="Refresh" Content="0; URL=teacheraccountpage.php">';
     }
+  }
   }
   $db->close();
 ?>

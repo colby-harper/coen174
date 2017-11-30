@@ -52,7 +52,7 @@ $result = $connection->query($sql);
   <form action = "addcourse.php" method = "post">
   <fieldset>
       <br><b>Course ID</b><br>
-      <input type="text" name="course_id" required>
+      <input type="text" placeholder="integer only" name="course_id" required>
       <br><b>Course Name</b><br>
       <input type="text" name="name" required>
       <button class = "course-button" type="submit">Add Course</button>

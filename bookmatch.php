@@ -130,13 +130,12 @@
         $updated = $db->query($sql);
         $new_rank = $new_rank + 1;
     }
-
-    if ($saved === TRUE) {
+    if (isset($saved)) {
         echo '<script>alert("Here are your matches!");</script>';
         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=bookresults.php">';
     } else {
-          echo '<script>alert("Error: Unable to submit form");</scipt>';
-	  echo '<META HTTP-EQUIV="Refresh" Content="0; URL=bookrank.php">';
+          echo '<script>alert("Error: Unable to submit form");</script>';
+	      echo '<META HTTP-EQUIV="Refresh" Content="0; URL=studentaccountpage.php">';
     }
 
     $db->close();
