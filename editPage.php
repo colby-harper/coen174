@@ -52,7 +52,7 @@
       <br><b>Primary Protagonist Nature</b></br>
       <input type="text" placeholder="Primary Protagonist Nature" id = "pprotag_n" name="pprotag_n" required value="<?php echo $row['pprotag_n'];?>">
       <br><b>Secondary Protagonist Nature</b></br>
-      <input type="text" placeholder="Secondary Protagonist Nature" id = "sprotag_n" name="sprotag_n" required value="<?php echo $row['sprotag_n'];?>">
+      <input type="text" placeholder="Secondary Protagonist Nature" id = "sprotag_n" name="sprotag_n" value="<?php echo $row['sprotag_n'];?>">
         <button type="submit">Edit Book</button>
   </fieldset>
   </form>

@@ -27,7 +27,7 @@
     $bookpprotag_n = $db->real_escape_string($_POST["pprotag_n"]);
     $booksprotag_n = $db->real_escape_string($_POST["sprotag_n"]);
 
-    $sql = "UPDATE  books SET title = '" .$booktitle. "', author = '" .$authorname. "', copyright = '" .$copyrightdate."', lexile = '".$lexilelevel."', pages = '".$numberofpages."', topic = '".$booktopic."', pprotag_n = '".$bookpprotag_n."', sprotag_n = '".$booksprotag_n."' WHERE id = '".$_SESSION['bookid']."', recommend = '".$boolrecommended."';";
+    $sql = "UPDATE  books SET title = '" .$booktitle. "', author = '" .$authorname. "', copyright = '" .$copyrightdate."', lexile = '".$lexilelevel."', pages = '".$numberofpages."', topic = '".$booktopic."', pprotag_n = '".$bookpprotag_n."', sprotag_n = '".$booksprotag_n."', recommend = '".$boolrecommended."' WHERE id = '".$_SESSION['bookid']."';";
 
     if ($db->query($sql) === TRUE) {
         echo '<script>alert("You have successfully edited the book");</script>';
