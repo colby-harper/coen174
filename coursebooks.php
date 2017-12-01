@@ -17,7 +17,9 @@
     $_SESSION['course'] = $_GET['course'];
     $sql = "SELECT * FROM student_books WHERE user_id ='".$_SESSION['user_id']."' AND course_id = '".$_SESSION['course']."';";
     $result = $db->query($sql);
-    if($result->num_rows == 0) 
+    $sql = "SELECT * FROM books WHERE  course_id = '".$_SESSION['course']."';";
+    $result2 = $db->query($sql);
+    if($result->num_rows != $result2->num_rows) 
     {
       echo '<META HTTP-EQUIV="Refresh" Content="0; URL=bookrank.php">';     
     } else {
