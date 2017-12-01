@@ -25,6 +25,8 @@
     //get books
     //rank them
     //add them to student database in that order
+    $sql1 = "DELETE FROM student_books WHERE course_id='".$_SESSION['course']."' AND user_id='".$_SESSION['user_id']."';";
+    $result1 = $db->query($sql1);
     $sql = "SELECT * FROM books WHERE course_id='".$_SESSION['course']."';";
     $result = $db->query($sql);
     while($row=mysqli_fetch_array($result)){
